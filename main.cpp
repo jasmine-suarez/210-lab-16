@@ -12,7 +12,7 @@ private:
 public:
     // constructors
     Color()                        { red = 0; green = 0; blue = 0; } // default
-    Color(int r)                   { red = r; green = 0; blue = 0; }
+    Color(int r)                   { red = r; green = 0; blue = 0; } // partial
     Color(int r, int g, int b)     { red = r; green = g; blue = b; } // full parameter
     // setters and getters
     int getRed()            { return red; }
@@ -55,6 +55,21 @@ int main() {
     c3.setBlue(240);
     c3.print();
     print(c3);
+
+    // color 4
+    Color c4;
+    c4.print();
+    print(c4);
+
+    // color 5
+    Color c5(234);
+    c5.print();
+    print(c5);
+
+    // color 6
+    Color c6(96, 25, 31);
+    c6.print();
+    print(c6);
 
     return 0;
 }
