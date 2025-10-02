@@ -10,6 +10,11 @@ private:
     int green;
     int blue;
 public:
+    // constructors
+    Color()                        { red = 0; green = 0; blue = 0; } // default
+    Color(int r)                   { red = r; green = 0; blue = 0; }
+    Color(int r, int g, int b)     { red = r; green = g; blue = b; } // full parameter
+    // setters and getters
     int getRed()            { return red; }
     void setRed(int r)      { red = r; }
     int getGreen()          { return green; }
